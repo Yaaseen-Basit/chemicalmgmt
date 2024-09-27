@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  font-size: 16px;
+}
+
+.table {
+  width: 100%;
+  margin: 20px auto 0;
+  font-size: 1rem;
+}
+
+/* Toolbar Layout */
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* Button and Icon Styles */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 16px;
+  transition: font-size 0.3s ease;
+}
+
+.btn i {
+  font-size: 1.5rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Icon Button Variants */
+.circular-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 10px;
+  color: inherit;
+}
+
+.icon-btn i {
+  font-size: 20px;
+}
+
+/* Hover and Active States */
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+.icon-btn.active {
+  background-color: transparent;
+  color: blue;
+  
+}
+
+/* Color Variants */
+.btn-secondary i { color: #6c757d; }
+.btn-danger i { color: #dc3545; }
+.btn-info i { color: #17a2b8; }
+.btn-success i { color: #28a745; }
+
+/* Table Styling */
+table {
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #e0e0e0;
+}
+
+tbody tr {
+  background-color: #ffffff;
+}
+
+/* Responsive Table */
+.table-responsive {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+/* Responsive Styles */
+
+/* Mobile (up to 600px) */
+@media (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+
+  .toolbar {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .btn, .toolbar button {
+      width: 10%;
+      font-size: 0.8rem;
+      padding: 8px;
+  }
+
+  .btn i, .toolbar i {
+      font-size: 1.2rem;
+  }
+
+  .table {
+      font-size: 0.8rem;
+  }
+
+  .table th, .table td {
+      padding: 10px;
+      text-align: left;
+  }
+}
+
+/* Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+      font-size: 15px;
+  }
+
+  .toolbar {
+      justify-content: space-between;
+  }
+
+  .btn, .toolbar button {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
+
+  .btn i, .toolbar i {
+      font-size: 1.3rem;
+  }
+
+  .table {
+      font-size: 0.9rem;
+  }
+
+  .table th, .table td {
+      padding: 12px;
+  }
+}
+
+/* Laptop/Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  .table {
+      font-size: 1rem;
+  }
+
+  .toolbar {
+      justify-content: flex-end;
+      margin-top: 15px;
+  }
+
+  .btn i {
+      font-size: 1.5rem;
+  }
+}
+.table-title h2 {
+  text-align: left;
+  margin-bottom: 2px;
+  font-size: 24px;
+  color:black;
+}
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active,
+.show > .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: transparent; 
+}
+/* Styles for small devices (mobile phones) */
+@media (max-width: 767.98px) {
+  .container {
+    padding: 10px;
+  }
+
+  .table-responsive {
+    overflow-x: scroll;
+  }
+
+  /* Adjust button size and layout for mobile */
+  .btn {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
